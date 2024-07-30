@@ -1,0 +1,16 @@
+.footer {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  color: #fff;
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+
+.text:hover {
+  opacity: 0.8;
+}

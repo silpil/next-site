@@ -1,0 +1,47 @@
+.firstscreen {
+  background-image: url('/firstscreen-lg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center right;
+  min-height: 600px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  color: var(--color-white);
+  max-width: 500px;
+}
+
+/* TODO */
+.content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+/* TODO */
+.content p {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1440px) {
+  .firstscreen {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .firstscreen {
+    background-image: url('/firstscreen-md.jpg');
+  }
+}
+
+@media (max-width: 768px) {
+  .firstscreen {
+    background-image: url('/firstscreen-sm.jpg');
+  }
+}

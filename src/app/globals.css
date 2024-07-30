@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-secondary: #FF1E1E;
+  --color-primary: #EC3F3F;
+  --color-black: #181818;
+  --color-white: #FFF;
+  --color-gray: #2F2F2F;
+  --color-indigo: #343338;
+
+  --button-outline-bg: rgba(236, 63, 63, 0.10);
+  --button-outline-border: 1px solid rgba(236, 63, 63, 0.80);
+  --button-shadow: 0px 3px 24px 0px rgba(255, 30, 30, 0.5);
+
+  --swiper-pagination-default: #2D2D2D;
+  --swiper-pagination-active: var(--color-primary);
+  --swiper-arrow-active: var(--color-primary);
+  --swiper-arrow-disabled: #2D2D2D;
+}

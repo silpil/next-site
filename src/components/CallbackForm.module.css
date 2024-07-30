@@ -1,0 +1,93 @@
+.title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  margin-top: 4.5rem;
+}
+
+.form input:not([type=checkbox]), .form textarea, .form select {
+  background-color: var(--color-gray);
+  color: #828282;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.form textarea {
+  min-height: 156px;
+}
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.5rem;
+}
+
+.line {
+  display: flex;
+}
+
+.content {
+  width: 60%;
+  padding-left: 120px;
+  font-weight: 600;
+}
+
+.content span {
+  font-size: 1rem;
+  color: #6C6C6C;
+}
+
+.content p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.error {
+  color: var(--color-primary);
+  margin-top: 2rem;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  width: 100%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #757575;
+  background-color: var(--color-gray);
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-image: url('/check.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #fff; */
+}
+
+.label {
+  vertical-align: middle;
+  margin-left: 5px;
+}

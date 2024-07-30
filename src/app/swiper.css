@@ -1,0 +1,36 @@
+.swiper-pagination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.swiper-pagination-progressbar {
+  background-color: var(--swiper-pagination-default);
+  height: 1px;
+}
+
+.swiper-pagination-progressbar-fill {
+  display: block;
+  height: 1px;
+  transform-origin: left;
+  background-color: var(--swiper-pagination-active);
+}
+
+/* .swiper-arrow-next {} */
+
+.swiper-arrow-prev {
+  transform: rotate(180deg);
+}
+.swiper-arrow {
+  color: var(--swiper-arrow-active);
+  height: 32px;
+  width: 18px;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+.swiper-button-disabled{
+  color: var(--swiper-arrow-disabled);
+}

@@ -1,0 +1,23 @@
+.button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.outline {
+  background-color: var(--button-outline-bg);
+  border: var(--button-outline-border);
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+}
+
+.full {
+  width: 100%;
+}
