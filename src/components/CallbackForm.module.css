@@ -61,6 +61,7 @@
   height: 20px;
   border: 1px solid #757575;
   background-color: var(--color-gray);
+  flex-shrink: 0;
 }
 
 .checkbox input {
@@ -84,10 +85,10 @@
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: #fff; */
 }
 
 .label {
   vertical-align: middle;
-  margin-left: 5px;
+  margin-left: 15px;
+  font-weight: 500;
 }

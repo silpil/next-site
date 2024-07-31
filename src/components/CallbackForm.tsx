@@ -63,22 +63,22 @@ const Callback = () => {
           </div>
 
           <div>
-            {/* TODO */}
-            <input className="block cursor-pointer bg-gray-50 focus:outline-none" id="default_size" type="file" />
+            <input className="block cursor-pointer bg-gray-50 focus:outline-none" type="file" />
           </div>
 
           <div className="flex items-center mb-8">
-            {/* TODO */}
             <label className={styles.checkbox}>
-              <input type="checkbox" />
+              <input id="checkbox-rule" type="checkbox" />
               <span className={styles.checkmark}></span>
             </label>
-            <span className={styles.label}>Даю согласие на обработку своих персональных данных</span>
+            <label htmlFor="checkbox-rule" className={styles.label}>Даю согласие на обработку своих персональных данных</label>
           </div>
           
           <button type="submit" className={stylesButton.button} disabled={isLoading}>
             {isLoading ? 'Отправка...' : 'Оставить заявку'}
           </button>
+
+          {error && <div className={styles.error}>{error}</div>}
         </form>
 
         <div className={styles.content}>
@@ -92,8 +92,6 @@ const Callback = () => {
           <p>Пн-Пт с 10:00 до 22:00</p>
         </div>
       </div>
-
-      {error && <div className={styles.error}>{error}</div>}
     </section>
   )
 }
